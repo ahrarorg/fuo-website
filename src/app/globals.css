@@ -1,0 +1,510 @@
+@import "tailwindcss";
+
+/* ————————————————————————————————————————————————
+   AHRAR ASTROLABE — design tokens
+   Gold & black, derived from brass astrolabes:
+   obsidian void, molten gold, champagne light,
+   ten department hues, ivory manuscript sections.
+———————————————————————————————————————————————— */
+
+@theme inline {
+  --color-obsidian: #0b0a08;
+  --color-charcoal: #171410;
+  --color-surface: #1e1a14;
+  --color-overlay: #26211a;
+  --color-gold: #e8b84b;
+  --color-gold-deep: #9c7a2f;
+  --color-gold-hot: #ffd98a;
+  --color-champagne: #f3e7c9;
+  --color-ivory: #f6f0e1;
+  --color-ivory-dim: #e9e0cb;
+  --color-ink: #14100a;
+  --color-muted: #a79e8b;
+  --color-muted-ink: #6b6252;
+  --color-success: #3ed598;
+  --color-warning: #ffb224;
+  --color-danger: #ff5a6e;
+  --color-info: #38d6e0;
+
+  --font-fa: var(--font-vazir), var(--font-space), ui-sans-serif, system-ui, sans-serif;
+  --font-en: var(--font-space), var(--font-vazir), ui-sans-serif, system-ui, sans-serif;
+
+  --ease-orbit: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-settle: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  --dept-talent: #e8b84b;
+  --dept-peace: #86c66b;
+  --dept-sustainability: #3ed598;
+  --dept-technology: #38d6e0;
+  --dept-organization: #5b8cff;
+  --dept-security: #9d7bff;
+  --dept-rights: #ff5a6e;
+  --dept-media: #f06bd8;
+  --dept-capital: #ffb224;
+  --dept-partnerships: #2dd4bf;
+
+  --nav-h: 4.5rem;
+  --gutter: clamp(1.25rem, 4vw, 4rem);
+  --measure: 68ch;
+
+  --step--1: clamp(0.8rem, 0.77rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.1rem + 0.7vw, 1.75rem);
+  --step-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.6rem);
+  --step-3: clamp(2.1rem, 1.6rem + 2.6vw, 4rem);
+  --step-4: clamp(2.7rem, 1.8rem + 4.6vw, 6.2rem);
+}
+
+html {
+  background: var(--color-obsidian);
+  scrollbar-color: var(--color-gold-deep) var(--color-obsidian);
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  background: var(--color-obsidian);
+  color: var(--color-champagne);
+  font-size: var(--step-0);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+html[dir="rtl"] body {
+  font-family: var(--font-fa);
+  line-height: 1.9;
+}
+html[dir="ltr"] body {
+  font-family: var(--font-en);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-gold-deep), var(--color-gold));
+  border-radius: 8px;
+  border: 2px solid var(--color-obsidian);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-hot);
+}
+
+/* Typography */
+.h-display {
+  font-size: var(--step-4);
+  line-height: 1.08;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+html[dir="rtl"] .h-display {
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+.h1 {
+  font-size: var(--step-3);
+  line-height: 1.15;
+  font-weight: 700;
+}
+html[dir="rtl"] .h1 {
+  line-height: 1.35;
+}
+.h2 {
+  font-size: var(--step-2);
+  line-height: 1.2;
+  font-weight: 700;
+}
+html[dir="rtl"] .h2 {
+  line-height: 1.4;
+}
+.h3 {
+  font-size: var(--step-1);
+  line-height: 1.35;
+  font-weight: 600;
+}
+.eyebrow {
+  font-size: var(--step--1);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+}
+html[dir="rtl"] .eyebrow {
+  letter-spacing: 0.06em;
+}
+.lead {
+  font-size: var(--step-1);
+  line-height: 1.7;
+  color: var(--color-champagne);
+  opacity: 0.86;
+}
+html[dir="rtl"] .lead {
+  line-height: 1.95;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Layout helpers (logical properties → RTL-safe) */
+.shell {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.shell-wide {
+  width: 100%;
+  max-width: 96rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.section-pad {
+  padding-block: clamp(4.5rem, 10vw, 9rem);
+}
+
+/* Gold hairline with gradient falloff */
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-gold) 45%, transparent) 20%,
+    color-mix(in srgb, var(--color-gold) 45%, transparent) 80%,
+    transparent
+  );
+}
+
+/* Manuscript (light) sections */
+.manuscript {
+  background:
+    radial-gradient(120% 90% at 85% 0%, color-mix(in srgb, var(--color-gold) 14%, transparent), transparent 55%),
+    var(--color-ivory);
+  color: var(--color-ink);
+}
+.manuscript ::selection {
+  background: var(--color-ink);
+  color: var(--color-ivory);
+}
+
+/* Ambient layered background */
+.aurora {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.aurora::before,
+.aurora::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.5;
+}
+.aurora::before {
+  width: 55vmax;
+  height: 55vmax;
+  inset-inline-start: -18vmax;
+  top: -22vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-gold) 16%, transparent), transparent 65%);
+  animation: aurora-drift 26s var(--ease-settle) infinite alternate;
+}
+.aurora::after {
+  width: 44vmax;
+  height: 44vmax;
+  inset-inline-end: -14vmax;
+  bottom: -20vmax;
+  background: radial-gradient(circle, color-mix(in srgb, var(--dept-organization) 10%, transparent), transparent 65%);
+  animation: aurora-drift 32s var(--ease-settle) infinite alternate-reverse;
+}
+@keyframes aurora-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(6vmax, 4vmax, 0) scale(1.12);
+  }
+}
+
+/* Film grain — code-generated SVG turbulence */
+.grain {
+  position: fixed;
+  inset: -50%;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain-shift 1.2s steps(4) infinite;
+}
+@keyframes grain-shift {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-2%, 1%); }
+  50% { transform: translate(1%, -2%); }
+  75% { transform: translate(-1%, 2%); }
+  100% { transform: translate(2%, -1%); }
+}
+
+/* Cards & controls */
+.card {
+  position: relative;
+  background: linear-gradient(160deg, var(--color-surface), var(--color-charcoal) 70%);
+  border: 1px solid color-mix(in srgb, var(--color-gold) 16%, transparent);
+  border-radius: 1rem;
+  transition:
+    border-color 0.5s var(--ease-orbit),
+    transform 0.5s var(--ease-orbit),
+    box-shadow 0.5s var(--ease-orbit);
+}
+.card:hover {
+  border-color: color-mix(in srgb, var(--color-gold) 45%, transparent);
+  transform: translateY(-3px);
+  box-shadow: 0 18px 50px -20px color-mix(in srgb, var(--color-gold) 25%, transparent);
+}
+
+.btn-gold {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--color-gold-hot), var(--color-gold) 45%, var(--color-gold-deep));
+  color: var(--color-ink);
+  font-weight: 700;
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  transition: box-shadow 0.45s var(--ease-orbit), transform 0.45s var(--ease-orbit);
+  box-shadow: 0 0 0 0 transparent;
+}
+.btn-gold:hover {
+  box-shadow: 0 8px 40px -8px color-mix(in srgb, var(--color-gold) 65%, transparent);
+}
+.btn-gold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.9s var(--ease-orbit);
+}
+.btn-gold:hover::after {
+  transform: translateX(120%);
+}
+html[dir="rtl"] .btn-gold::after {
+  transform: translateX(120%);
+}
+html[dir="rtl"] .btn-gold:hover::after {
+  transform: translateX(-120%);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--color-gold) 40%, transparent);
+  color: var(--color-champagne);
+  font-weight: 600;
+  font-size: var(--step--1);
+  transition: border-color 0.4s var(--ease-orbit), background-color 0.4s var(--ease-orbit), color 0.4s;
+}
+.btn-ghost:hover {
+  border-color: var(--color-gold);
+  background: color-mix(in srgb, var(--color-gold) 10%, transparent);
+  color: var(--color-gold-hot);
+}
+
+/* Reveal primitives (JS adds .is-in) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s var(--ease-orbit), transform 0.9s var(--ease-orbit);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Arc divider motif */
+.arc-divider {
+  display: block;
+  width: 100%;
+  height: auto;
+  color: color-mix(in srgb, var(--color-gold) 35%, transparent);
+}
+
+/* Anchor offset below fixed nav */
+[id] {
+  scroll-margin-top: calc(var(--nav-h) + 1.5rem);
+}
+
+/* Hero staged entrance */
+.hero-item {
+  transform: translateY(26px);
+  transition: transform 0.9s var(--ease-orbit);
+}
+.entered .hero-item {
+  transform: none;
+}
+
+/* Loader stroke-draw */
+.loader-ring,
+.loader-a,
+.loader-bar {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: loader-draw 1.1s var(--ease-orbit) forwards;
+}
+.loader-a {
+  animation-delay: 0.25s;
+}
+.loader-bar {
+  animation-delay: 0.55s;
+}
+.loader-dot {
+  opacity: 0;
+  animation: loader-dot-in 0.4s var(--ease-orbit) 0.85s forwards;
+}
+@keyframes loader-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes loader-dot-in {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Reduced motion: elegant, instant, still beautiful */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .grain {
+    animation: none;
+  }
+}
+
+/* Loader mark entrance + focus readout swap (CSS, off the critical JS path) */
+.loader-mark {
+  animation: loader-mark-in 0.6s var(--ease-orbit) both;
+}
+@keyframes loader-mark-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.readout-in {
+  animation: readout-in 0.35s var(--ease-orbit) both;
+}
+@keyframes readout-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Observatory instrument sliders */
+.range {
+  appearance: none;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--color-gold-deep), var(--color-gold));
+  cursor: pointer;
+}
+[dir="rtl"] .range {
+  background: linear-gradient(to left, var(--color-gold-deep), var(--color-gold));
+}
+.range:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 4px;
+}
+.range::-webkit-slider-thumb {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-gold-hot);
+  border: 2px solid var(--color-obsidian);
+  box-shadow:
+    0 0 0 1px var(--color-gold-deep),
+    0 0 10px rgb(232 184 75 / 0.55);
+  transition: transform 0.2s var(--ease-orbit);
+}
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.25);
+}
+.range::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-gold-hot);
+  border: 2px solid var(--color-obsidian);
+  box-shadow:
+    0 0 0 1px var(--color-gold-deep),
+    0 0 10px rgb(232 184 75 / 0.55);
+  transition: transform 0.2s var(--ease-orbit);
+}
+.range::-moz-range-thumb:hover {
+  transform: scale(1.25);
+}
+.range::-moz-range-track {
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--color-gold-deep), var(--color-gold));
+}

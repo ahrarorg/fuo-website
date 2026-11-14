@@ -1,0 +1,560 @@
+{
+  "meta": {
+    "title": "Freemans Universal Organization | Ten Orbits, One World",
+    "description": "Freemans Universal Organization (Ahrar) is a global network of free people across ten departments: talent, peace, sustainable development, technology & AI, security, human rights and more.",
+    "tagline": "Ten orbits, one world"
+  },
+  "brand": {
+    "name": "Freemans Universal Organization",
+    "short": "FUO",
+    "tagline": "Ten orbits, one world"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mission": "Mission",
+    "programs": "Departments",
+    "news": "News",
+    "impact": "Impact",
+    "contact": "Contact",
+    "join": "Join",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLang": "فارسی",
+    "soundOn": "Turn sound on",
+    "soundOff": "Turn sound off",
+    "skip": "Skip to content"
+  },
+  "loader": {
+    "label": "Aligning orbits"
+  },
+  "hero": {
+    "eyebrow": "Freemans Universal Organization",
+    "titleA": "Ten orbits.",
+    "titleB": "One world.",
+    "lead": "We are a global network of free people. Across ten departments — from elite talent and artificial intelligence to world peace and sustainable development — we design and build a shared future.",
+    "ctaPrimary": "Find your orbit",
+    "ctaSecondary": "Explore departments",
+    "dragHint": "Drag to rotate",
+    "scrollHint": "Scroll to open the instrument"
+  },
+  "controls": {
+    "title": "Observatory instruments",
+    "speed": "Orbit speed",
+    "glow": "Glow",
+    "spread": "Spread",
+    "distance": "Camera distance",
+    "density": "Particle density",
+    "density0": "Low",
+    "density1": "Medium",
+    "density2": "High",
+    "spin": "Auto-spin",
+    "reset": "Reset",
+    "randomize": "Randomize",
+    "export": "Export PNG"
+  },
+  "stage": {
+    "title": "Ten departments. One mission.",
+    "lead": "Every orbit is a department; every particle, a free person. Hover the orbits — or choose from the list below.",
+    "focusHint": "Select an orbit",
+    "readoutCta": "Enter this orbit"
+  },
+  "departments": {
+    "title": "The ten orbits",
+    "lead": "Each department is an independent orbit with a shared direction. Choose one and go deep.",
+    "items": {
+      "talent": {
+        "name": "Talent & Elite Recruitment",
+        "short": "Talent & elites",
+        "description": "We identify exceptional talent anywhere in the world and turn them into tomorrow's stewards through growth programs, fellowships and network-building.",
+        "activities": [
+          "Talent identification across 42 countries",
+          "Growth & co-creation fellowships",
+          "Global network of young stewards"
+        ]
+      },
+      "peace": {
+        "name": "Universalism & World Peace",
+        "short": "Peace & universalism",
+        "description": "We turn dialogue between cultures into common action — from multilingual forums to social reconciliation projects. Peace is something you build, not something you wish for.",
+        "activities": [
+          "Annual Universal Peace Forum",
+          "Cross-cultural dialogue tables",
+          "Local reconciliation & solidarity projects"
+        ]
+      },
+      "sustainability": {
+        "name": "Sustainable Development",
+        "short": "Sustainability",
+        "description": "For a future whose resources are enough for everyone: we design and run local water, clean-energy and circular-economy projects together with host communities.",
+        "activities": [
+          "Water & clean-energy projects",
+          "Circular economy & waste reduction",
+          "Annual sustainable-development report"
+        ]
+      },
+      "technology": {
+        "name": "Technology & Artificial Intelligence",
+        "short": "Technology & AI",
+        "description": "We want technology in the service of human dignity — from responsible AI systems to open-source tools that give free people agency anywhere on Earth.",
+        "activities": [
+          "Responsible AI co-creation",
+          "Open-source tools for civil society",
+          "Digital literacy & data security"
+        ]
+      },
+      "organization": {
+        "name": "Organizational Development & Systems",
+        "short": "Org development",
+        "description": "We build structures and systems that make civil-society organizations agile, transparent and durable — from internal governance to process architecture.",
+        "activities": [
+          "Structure & governance design",
+          "Transparency & reporting systems",
+          "Network operations standards"
+        ]
+      },
+      "security": {
+        "name": "Security & Cybersecurity",
+        "short": "Security & cyber",
+        "description": "We protect civil-society actors, data and critical infrastructure. Security is a precondition of freedom — so we put it within everyone's reach through training and tools.",
+        "activities": [
+          "Cyber threat monitoring & response",
+          "Security training for civil actors",
+          "Critical-infrastructure audits"
+        ]
+      },
+      "rights": {
+        "name": "Politics & Human Rights",
+        "short": "Politics & rights",
+        "description": "Through research, advocacy and policy work we defend fundamental human rights and carry the voice of free people to the tables where decisions are made.",
+        "activities": [
+          "Human-rights research & reporting",
+          "Advocacy & policy-making",
+          "Monitoring fundamental freedoms"
+        ]
+      },
+      "media": {
+        "name": "Social Networks & Content Production",
+        "short": "Media & content",
+        "description": "We tell the story of freedom in the world's languages — accurate, creative, multilingual content that builds awareness and invites participation.",
+        "activities": [
+          "Multilingual content production",
+          "Awareness campaigns",
+          "The Freemans media studio"
+        ]
+      },
+      "capital": {
+        "name": "Capital Attraction & Financing",
+        "short": "Capital & financing",
+        "description": "We secure sustainable, transparent resources for the mission — from micro-donations to impact investment. Every unit of currency has a clear path.",
+        "activities": [
+          "Transparent donation fund",
+          "Impact investment",
+          "Real-time financial reporting"
+        ]
+      },
+      "partnerships": {
+        "name": "Support, Cooperation & Startups",
+        "short": "Partnerships & startups",
+        "description": "We are the bridge between idea and execution — accelerating social startups and brokering partnerships that turn cooperation into products and services.",
+        "activities": [
+          "Social-startup accelerator",
+          "Organizational partnership tables",
+          "Strategic cooperation fund"
+        ]
+      }
+    },
+    "joinCta": "Join this orbit"
+  },
+  "home": {
+    "missionTitle": "Why Ahrar?",
+    "missionText": "\"Ahrar\" means the free — those who treat freedom not as a slogan but as a responsibility. We believe the world's future gets built when free people everywhere stop being separate islands and become one aligned constellation.",
+    "missionCta": "Mission & values",
+    "impactTitle": "Impact before the ask",
+    "impactLead": "Every number has a clear path — from source to outcome. Our reports are published openly.",
+    "impactCta": "Full impact report",
+    "newsTitle": "Latest stories",
+    "newsCta": "All news",
+    "joinTitle": "Find your orbit",
+    "joinText": "Ten orbits, ten ways to make an impact. Join, support, or bring your startup into the network — there is an open place for you in this constellation.",
+    "joinCta": "Join the constellation"
+  },
+  "mission": {
+    "title": "Mission & Values",
+    "lead": "One direction, five values, ten orbits.",
+    "statementTitle": "Mission statement",
+    "statement": "Our mission is to organize the free people of the world to build a future in which dignity, freedom and opportunity are everyone's right, not a privilege of the few. Our vision is an aligned world: ten departments, thousands of projects, one direction.",
+    "valuesTitle": "Five core values",
+    "values": {
+      "freedom": {
+        "name": "Freedom",
+        "text": "We treat freedom as responsibility: every member is free to choose, to critique and to build their own path — and accountable for those choices."
+      },
+      "dignity": {
+        "name": "Dignity",
+        "text": "No human being is a means. In every project, people's dignity comes before indicators and numbers."
+      },
+      "solidarity": {
+        "name": "Solidarity",
+        "text": "We don't build separate islands; we build orbits that reinforce each other. Every member's success is the constellation's success."
+      },
+      "transparency": {
+        "name": "Transparency",
+        "text": "From resources to impact, everything is traceable. Our financial and performance reports are public."
+      },
+      "wisdom": {
+        "name": "Collective wisdom",
+        "text": "Decisions are made with data, dialogue and shared experience — not with the loudest voice, but with the clearest reason."
+      }
+    },
+    "howTitle": "How we work",
+    "how": [
+      {
+        "title": "Identify",
+        "text": "We identify talent, needs and opportunities across the global network."
+      },
+      {
+        "title": "Align",
+        "text": "We place people and organizations in the right orbit, together."
+      },
+      {
+        "title": "Impact",
+        "text": "We accompany each project to measurable impact — and report it."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Ahrar",
+    "lead": "The story of a network that turned an organization into a constellation.",
+    "storyTitle": "From one question to one constellation",
+    "story": [
+      "Ahrar began with a simple question: why are the free people of the world, with all their power, scattered? Our answer became a metaphor: a constellation. Instead of a hierarchical organization, we built a network of orbits — each with an independent mission and a shared direction.",
+      "Today the network is active across ten departments, from elite talent and AI to peace, security and human rights. Each department works like an orbit in the organization's astrolabe: independent in motion, concentric in direction.",
+      "Our name carries two promises. \"Universal\" means no border limits our reach. \"Ahrar\" — the free — means no member is ever another's instrument. These two promises determine our architecture."
+    ],
+    "timelineTitle": "Network timeline",
+    "timeline": [
+      {
+        "year": "2021",
+        "title": "The spark",
+        "text": "The idea of a network of free people took shape in cross-cultural dialogues."
+      },
+      {
+        "year": "2022",
+        "title": "First orbits",
+        "text": "The first three departments — talent, peace and technology — began operating."
+      },
+      {
+        "year": "2023",
+        "title": "Going global",
+        "text": "The network reached 20 countries and held the first Universal Peace Forum."
+      },
+      {
+        "year": "2024",
+        "title": "Ten orbits",
+        "text": "The ten-department architecture was completed and the financial transparency system launched."
+      },
+      {
+        "year": "2026",
+        "title": "New horizons",
+        "text": "AI co-creation and the social-startup accelerator joined the constellation."
+      }
+    ],
+    "governanceTitle": "Network governance",
+    "governance": [
+      {
+        "title": "Steering Council",
+        "text": "Macro direction and policy approval with representatives of all ten departments."
+      },
+      {
+        "title": "Members' Assembly",
+        "text": "The beating heart of the organization: one member, one vote, open critique of every path."
+      },
+      {
+        "title": "Transparency Committee",
+        "text": "Independent audits and public release of financial and impact reports."
+      },
+      {
+        "title": "Autonomous departments",
+        "text": "Each orbit is independent in execution and accountable to the Steering Council."
+      }
+    ]
+  },
+  "impact": {
+    "title": "Impact & Transparency",
+    "lead": "We publish numbers not for applause, but for audit.",
+    "stats": [
+      {
+        "value": 42,
+        "suffix": "",
+        "label": "Countries",
+        "note": "Active network presence"
+      },
+      {
+        "value": 128,
+        "suffix": "",
+        "label": "Active projects",
+        "note": "Across ten departments"
+      },
+      {
+        "value": 3600,
+        "suffix": "+",
+        "label": "Members",
+        "note": "Free people, aligned"
+      },
+      {
+        "value": 10,
+        "suffix": "",
+        "label": "Departments",
+        "note": "One shared mission"
+      }
+    ],
+    "chartTitle": "Projects across the orbits",
+    "chartLead": "Each orbit carries projects in proportion to its mission; technology and sustainability hold the largest share.",
+    "chartUnit": "projects",
+    "chartValues": [
+      14,
+      11,
+      16,
+      22,
+      9,
+      12,
+      13,
+      10,
+      8,
+      13
+    ],
+    "allocationTitle": "Where does each donation go?",
+    "allocation": [
+      {
+        "label": "Programs & projects",
+        "percent": 72
+      },
+      {
+        "label": "Operations & network",
+        "percent": 18
+      },
+      {
+        "label": "Sustainability reserve",
+        "percent": 10
+      }
+    ],
+    "allocationNote": "Percentages are drawn from the audited annual financial report.",
+    "reportTitle": "The impact report, at a glance",
+    "reportText": "Download this page's data as CSV and audit it yourself.",
+    "reportCta": "Download data (CSV)",
+    "disclaimer": "Figures on this page are sample data and will be replaced with the organization's official figures."
+  },
+  "news": {
+    "title": "News & Articles",
+    "lead": "Living stories from the network — from the peace forum to the AI lab.",
+    "searchPlaceholder": "Search the news…",
+    "all": "All",
+    "categories": {
+      "peace": "Peace",
+      "tech": "Technology",
+      "development": "Development",
+      "org": "Organization"
+    },
+    "readMore": "Read the story",
+    "minRead": "min read",
+    "backToList": "Back to news",
+    "empty": "No stories match your search.",
+    "items": [
+      {
+        "slug": "ai-fellowship-2026",
+        "date": "2026-10-28",
+        "category": "tech",
+        "title": "The Ahrar AI co-creation fellowship begins",
+        "excerpt": "The first responsible-AI fellowship opened with 30 researchers from 12 countries.",
+        "readMinutes": 3,
+        "body": [
+          "The Technology & AI department launched the first \"Ahrar Co-Creation\" fellowship with 30 researchers from 12 countries. The six-month program focuses on building responsible AI systems for civil society.",
+          "Fellows advance projects along three tracks — open-source tools, data literacy and algorithmic security — and present their output to the network's general assembly every month.",
+          "According to the department's steward, the goal is for AI to become an instrument for distributing opportunity rather than concentrating power.",
+          "The fellowship is supported by the Strategic Cooperation Fund, and all of its output will be published open-source."
+        ]
+      },
+      {
+        "slug": "universal-peace-forum",
+        "date": "2026-09-15",
+        "category": "peace",
+        "title": "Universal Peace Forum: dialogue in 12 languages",
+        "excerpt": "The fourth annual peace forum gathered representatives of 42 countries with live interpretation in 12 languages.",
+        "readMinutes": 4,
+        "body": [
+          "The fourth Universal Peace Forum, hosted by the Universalism & World Peace department, brought together representatives of 42 countries for three days of dialogue on social reconciliation, cross-cultural understanding and human security.",
+          "This edition's signature was live interpretation in 12 languages and the design of \"aligned tables\" — tables where, instead of speeches, every participant offered one practical commitment.",
+          "The forum produced 18 shared commitments, now running as local projects whose progress is reported publicly.",
+          "The fifth forum is planned for next year, and the call to host it will be published soon."
+        ]
+      },
+      {
+        "slug": "sustainability-report-2026",
+        "date": "2026-08-02",
+        "category": "development",
+        "title": "The 2026 Sustainable Development Report is out",
+        "excerpt": "A year of water, clean-energy and circular-economy projects across 16 countries, documented.",
+        "readMinutes": 3,
+        "body": [
+          "The Sustainable Development department released its annual report — a document covering 16 water and clean-energy projects and 9 circular-economy initiatives across 16 countries.",
+          "According to the report, water projects gave 12,000 households durable access, and circular initiatives returned the waste of 34 neighborhoods to the recovery cycle.",
+          "The report was prepared with an independent audit methodology, and its raw data is publicly available to researchers.",
+          "The full report, together with CSV data, can be downloaded from the Impact page."
+        ]
+      },
+      {
+        "slug": "incubator-cohort-3",
+        "date": "2026-06-20",
+        "category": "org",
+        "title": "The third partnership accelerator cohort",
+        "excerpt": "Ten social startups from four continents joined the Ahrar acceleration network.",
+        "readMinutes": 2,
+        "body": [
+          "The Partnerships & Startups department opened its third accelerator cohort, admitting 10 social startups from four continents.",
+          "The cohort focuses on three fields — technology for access, circular economy and free media — and each team receives a network steward and a financial support package.",
+          "At the end of the program, teams present their products to impact investors at \"Ahrar Demo Day\".",
+          "The call for the fourth cohort will be published this winter."
+        ]
+      }
+    ]
+  },
+  "join": {
+    "title": "Join the constellation",
+    "lead": "Three ways to align: become a member, support financially, or build an organizational partnership. Every path has a clear orbit.",
+    "tabMembership": "Membership",
+    "tabSupport": "Support",
+    "pickerTitle": "Choose your orbit",
+    "pickerLead": "Pick the department where you want to make an impact — you can change it later.",
+    "tiersTitle": "Membership level",
+    "tiers": [
+      {
+        "id": "companion",
+        "name": "Companion",
+        "amount": 9,
+        "period": "/mo",
+        "outcome": "Each month, you fund one learning session for a new member.",
+        "features": [
+          "Orbit insider newsletter",
+          "Invitations to monthly circles",
+          "Quarterly impact report"
+        ]
+      },
+      {
+        "id": "member",
+        "name": "Member",
+        "amount": 29,
+        "period": "/mo",
+        "outcome": "You drive one local project forward for a month.",
+        "features": [
+          "Full access to your chosen orbit",
+          "One vote in the Members' Assembly",
+          "Growth & networking workshops"
+        ]
+      },
+      {
+        "id": "steward",
+        "name": "Steward",
+        "amount": 99,
+        "period": "/mo",
+        "outcome": "You back a social startup through its first step.",
+        "features": [
+          "Strategic stewardship circle",
+          "Dedicated annual report",
+          "Direct line to your department"
+        ]
+      }
+    ],
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "city": "City / country",
+      "message": "Why do you want to align? (optional)",
+      "namePh": "Your name",
+      "emailPh": "you@example.com",
+      "cityPh": "e.g. Berlin, Germany",
+      "messagePh": "One sentence about your motivation…",
+      "submit": "Register membership",
+      "submitting": "Registering…",
+      "successTitle": "Welcome to the constellation",
+      "successText": "Your request was registered in the \"{orbit}\" orbit. The membership team will reach out soon.",
+      "errorRequired": "This field is required",
+      "errorEmail": "Enter a valid email",
+      "selectedOrbit": "Selected orbit"
+    },
+    "support": {
+      "title": "Transparent support",
+      "lead": "Every amount has a specific outcome. The path of each donation is traceable in public reports.",
+      "once": "One-time",
+      "monthly": "Monthly",
+      "custom": "Other amount",
+      "customPh": "Amount in USD",
+      "submit": "Register support",
+      "successTitle": "Thank you for aligning",
+      "successText": "Your support was registered. A receipt and its impact path will be sent to your email.",
+      "outcomePrefix": "This support's impact:",
+      "perMonth": "per month",
+      "note": "This is a demo payment flow; it will be connected to the official gateway soon."
+    },
+    "demoNote": "This form runs in demo mode; data is stored only in your browser."
+  },
+  "contact": {
+    "title": "Start the conversation",
+    "lead": "For partnership, media, membership or any question — one orbit is always open.",
+    "formTitle": "Your message",
+    "infoTitle": "Channels",
+    "emailLabel": "Email",
+    "emailValue": "hello@fuo.example",
+    "responseLabel": "Response time",
+    "responseValue": "24–48 working hours",
+    "networkLabel": "Network",
+    "networkValue": "Active in 42 countries; borderless",
+    "note": "Addresses on this page are samples and will be replaced with official channels.",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your message",
+      "namePh": "Your name",
+      "emailPh": "you@example.com",
+      "subjectPh": "Partnership, press, membership…",
+      "messagePh": "Write your message…",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "successTitle": "Message received",
+      "successText": "Thank you for reaching out; the FUO team will reply soon.",
+      "errorRequired": "This field is required",
+      "errorEmail": "Enter a valid email",
+      "demoNote": "This form is a demo; your message is stored only in your browser."
+    }
+  },
+  "footer": {
+    "tagline": "Ten orbits, one world. A global network of free people building a shared future.",
+    "explore": "Explore",
+    "programsTitle": "Orbits",
+    "contactTitle": "Connect",
+    "transparencyTitle": "Transparency",
+    "transparencyText": "Of every donation: 72% programs, 18% operations, 10% sustainability reserve.",
+    "rights": "© {year} Freemans Universal Organization. All rights reserved.",
+    "backTop": "Back to top",
+    "newsletterTitle": "The Orbits newsletter",
+    "newsletterText": "Once a month: impact stories and ways to take part.",
+    "newsletterPh": "Your email",
+    "newsletterCta": "Subscribe",
+    "newsletterSuccess": "Registered — the first issue arrives soon.",
+    "sampleNote": "Demo build: content, figures and addresses are samples, to be replaced with official data."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "close": "Close",
+    "loading": "Loading",
+    "orbitCta": "Find your orbit",
+    "sampleBadge": "Sample"
+  },
+  "notFound": {
+    "title": "This orbit was not found",
+    "text": "The page you are looking for is not in the constellation.",
+    "cta": "Back to home"
+  }
+}
