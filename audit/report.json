@@ -1,0 +1,232 @@
+{
+  "consoleErrors": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "checks": [
+    {
+      "name": "loader completes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "webgl canvas mounted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "instrument panel visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "speed slider live readout",
+      "pass": true,
+      "detail": "1.80"
+    },
+    {
+      "name": "spin toggle flips",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "density select applies",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "randomize changes params",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reset restores defaults",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "scene export downloads PNG",
+      "pass": true,
+      "detail": "fuo-astrolabe.png"
+    },
+    {
+      "name": "scroll narrative reveals department overlay",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "hover focus readout updates",
+      "pass": true,
+      "detail": "استعدادیابی و جذب نخبگاناستعدادهای درخشا"
+    },
+    {
+      "name": "orbit list click navigates to programs anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "news search filters",
+      "pass": true,
+      "detail": "4 -> 1"
+    },
+    {
+      "name": "news category filter",
+      "pass": true,
+      "detail": "1 card(s)"
+    },
+    {
+      "name": "article page renders",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "impact CSV export downloads",
+      "pass": true,
+      "detail": "fuo-impact-sample-fa.csv"
+    },
+    {
+      "name": "join orbit preselect from query",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "join validation blocks empty submit",
+      "pass": true,
+      "detail": "3 errors"
+    },
+    {
+      "name": "join membership success state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "join demo persists locally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "join support success state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "contact validation blocks empty submit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "contact rejects invalid email",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "contact success state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "locale switch to en",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "en is LTR",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sound toggle presses",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile home no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile instrument panel visible",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile first paint uses SVG fallback (no canvas yet)",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu opens",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile menu closes on Esc",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mobile /fa/programs no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/join no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/impact no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/news no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/contact no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/about no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile /fa/mission no horizontal overflow",
+      "pass": true,
+      "detail": "0px"
+    },
+    {
+      "name": "mobile upgrades to WebGL on first interaction",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: no loader",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: svg fallback, no canvas",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "reduced motion: instrument panel hidden",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "metrics": {
+    "desktop": {
+      "lcp": 172,
+      "cls": 0
+    },
+    "mobile": {
+      "lcp": 300,
+      "cls": 0.00007546566837107379
+    }
+  }
+}
